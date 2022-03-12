@@ -16,6 +16,11 @@
     /*grid-template-columns: 1fr 2fr;*/
     /*grid-template-columns: 1fr;*/
     grid-template-columns: repeat(auto-fit, 150px);
+
+    /*areas*/
+    /*grid-template-areas: "header header"*/
+    /*                     "sidebar main"*/
+    /*                     "footer footer";*/
 }
 
 .item-1 {
@@ -28,24 +33,28 @@
 
     background: yellow;
     text-align: center;
+    /*grid-area: header;*/
+
+    grid-area: 1/1/1/4;
 }
 .item-2 {
     background: red;
     text-align: center;
+    /*grid-area: main;*/
+
+    grid-area: 2/1/4/2;
 }
 .item-3 {
     background: blue;
     text-align: center;
+    /*grid-area: sidebar;*/
+
+    grid-area: 2/2/4/4;
 }
 .item-4 {
     background: pink;
     text-align: center;
-}
-.item-5 {
-    background: orange;
-    text-align: center;
-}
-.item-6 {
-    background: skyblue;
-    text-align: center;
+    /*grid-area: footer;*/
+
+    grid-area: 4/1/5/4;
 }
